@@ -1,0 +1,52 @@
+{% extends 'Huffman_coding_app/layout.html' %}
+{% block body %}
+{% load static %}
+
+ {% csrf_token %}
+        <div>
+            <div id="login-row" class="row justify-content-center align-items-center">
+                    <div class="index-heading col-12">
+                    	<div class="index-title-heading">Welcome to our Platform</div>
+                    	<div class="index-main-heading">Text Compression</div>
+                    </div>
+                    <div class="full-container col-12">
+	                    <div class ="left-container image">
+	                    	<img src="static/binfile.jpg">
+	                    </div>
+	                    <div class="right-container" style="color: #17a2b8;">
+                            <h1>How to Compress the text File.</h1>
+                            <div id="content">
+                                <ol>
+                                    <li>Go to the Compression part</li>
+                                    <li>Upload the <span style="font-weight:bolder;font-color:blue;color:blue;">".txt"</span> File</li>
+                                    <li>Click Compress</li>
+                                    <li>Your compressed file will be ready to DOWNLOAD</li>
+                                </ol>
+                            </div>
+	                    </div>
+                    </div>
+                    <div class="full-container col-12">
+	                    <div class ="left-container" style="color: #17a2b8;">
+	                    	 <h1>How to Decompress the  File.</h1>
+                            <div id="content">
+                                <ol>
+                                    <li>Go to the Decompression part.</li>
+                                    <li>Upload the <span style="font-weight:bolder;font-color:blue;color:blue;">".textc"</span> File</li>
+                                    <li>Click Decompress</li>
+                                    <li>Your decompressed text file will be ready to DOWNLOAD</li>
+                                </ol>
+
+                            </div>
+	                    </div>
+	                    <div class="right-container image">
+                            <img src="static/textfile.png">
+	                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<br>
+<br>
+{% endblock %}

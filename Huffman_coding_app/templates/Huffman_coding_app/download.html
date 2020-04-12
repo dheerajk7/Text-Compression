@@ -1,0 +1,29 @@
+{% extends 'Huffman_coding_app/layout.html' %}
+{% block body %}
+{% load static %}
+<div>
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                           <br>
+                            <h3 class="text-center text-info" style="font-size:60px;">Download</h3>
+                            <br>
+                            <br>
+                            <div class="form-group" >
+                                 <li>
+                            <a  href="{{zip_file_path}}" download="{{zip_file_path}}">
+
+                        <!-- Auto width -->
+                       <button class="btn"><i class="fa fa-download"></i> Download</button>
+
+                        </a>
+                        </li>
+                            </div>
+
+                        <br>
+                        </div>
+                </div>
+            </div>
+</div>
+
+{% endblock %}
